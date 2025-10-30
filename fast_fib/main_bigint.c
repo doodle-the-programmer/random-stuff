@@ -6,7 +6,7 @@
 /*   By: gpatrici <gpatrici@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 23:10:00 by gpatrici          #+#    #+#             */
-/*   Updated: 2025/10/30 23:15:29 by gpatrici         ###   ########.fr       */
+/*   Updated: 2025/10/30 23:29:46 by gpatrici         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -128,8 +128,7 @@ int	main(void)
 {
 	mpz_t	result;
 	double	time_sec;
-	int		test_values[] = {50, 100, 1000, 10000, 100000, 1000000, 10000000,
-				100000000};
+	int		test_values[] = {50, 100, 1000, 10000, 100000, 1000000};
 	int		i;
 	int		n;
 	char	*str;
@@ -139,7 +138,7 @@ int	main(void)
 	mpz_init(result);
 	printf("=== FAST FIBONACCI (ARBITRARY PRECISION) ===\n\n");
 	// Test various sizes
-	for (i = 0; i < 8; i++)
+	for (i = 0; i < 6; i++)
 	{
 		n = test_values[i];
 		start = get_time_us();
